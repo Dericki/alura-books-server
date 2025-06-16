@@ -12,7 +12,7 @@ function deletaFavoritoPorId(id) {
 }
 
 function insereFavorito(id){
-    const livros = JSON.parse(fs.readFileSync("livroa.json"))
+    const livros = JSON.parse(fs.readFileSync("livros.json"))
     const favoritos = JSON.parse(fs.readFileSync("favoritos.json"))
 
     const livrosInserido = livros.find( livro => livro.id === id)
